@@ -1,0 +1,17 @@
+
+.peta {
+    width: 100%;
+    Height: 40vh;
+}
+
+
+.gz-center {
+    text-align: center;
+}
+
+
+.image {
+    max-height: 200px;
+    height: 200px;
+    width: auto;
+}

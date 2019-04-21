@@ -1,0 +1,76 @@
+{
+    "places" : [
+        {
+            "lokasi": [-7.290644, 112.796294], 
+            "sponsor" : "Tambal Ban Pak Dart",
+            "gambar" : "assets/images/tambal-ban.jpg",
+            "alamat" : "Alamat : Jl. Arif Rahman Hakim No.32, Keputih, Sukolilo, Kota Surabaya, Jawa Timur 60111",
+            "telp" : "Telp : +628112456789",
+            "buka" : "Jam Operasional : 07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.290233, 112.799261], 
+            "sponsor" : "Tambal Ban Pak Golang",
+            "gambar" : "assets/images/tambal-ban-1.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.283975, 112.802019], 
+            "sponsor" : "Tambal Ban Pak Python",
+            "gambar" : "assets/images/tambal-ban-2.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.288882, 112.800233], 
+            "sponsor" : "Tambal Ban Pak Rust",
+            "gambar" : "iassets/images/tambal-ban-3.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.268006, 112.662597], 
+            "sponsor" : "Tambal Ban Pak Tensorflow",
+            "gambar" : "assets/images/tambal-ban-4.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.328579, 112.741423], 
+            "sponsor" : "Tambal Ban Pak Jekyll",
+            "gambar" : "assets/images/tambal-ban-5.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.4462755,112.7162229],
+            "sponsor" : "Tambal Ban Pak Bosque",
+            "gambar" : "assets/images/tambal-ban-1.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.446201,112.7093243],
+            "sponsor" : "Tambal Ban Pak Asiyap",
+            "gambar" : "assets/images/tambal-ban-2.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        },
+        {
+            "lokasi": [-7.4499807,112.7217639],
+            "sponsor" : "Tambal Ban Pak Daniel",
+            "gambar" : "assets/images/tambal-ban-3.jpg",
+            "alamat" : "Alamat : Surabaya, Jawa Timur.",
+            "telp" : "Telp : +628112456789",
+            "buka" : "07:00 - 16.00"
+        }
+    ]
+}
