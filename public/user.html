@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="assets/js/firebase-cfg.js"></script>
+    <script src="./assets/js/auth.js"></script>
+
 </head>
+
 <body>
-    SUKSESS!
+    <h3 id="title"></h3>
+    <p id="email"></p>
+
+    <br><br>
+    <button onclick="logout()">Logout</button>
+
+
+    <script>
+
+        var title, email, gambar;
+
+        title = document.getElementById("title");
+        email = document.getElementById("email");
+        var user = firebase.auth().currentUser;
+
+        if (user != null) {
+            user.providerData.forEach(function (profile) {
+                console.log("Sign-in provider: " + profile.providerId);
+                console.log("  Provider-specific UID: " + profile.uid);
+                console.log("  Name: " + profile.displayName);
+                console.log("  Email: " + profile.email);
+                console.log("  Photo URL: " + profile.photoURL);
+            });
+        }
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // alert(JSON.stringify(user));
+
+
+                user.providerData.forEach(function (profile) {
+                    console.log("Sign-in provider: " + profile.providerId);
+                    console.log("  Provider-specific UID: " + profile.uid);
+                    console.log("  Name: " + profile.displayName);
+                    console.log("  Email: " + profile.email);
+                    console.log("  Photo URL: " + profile.photoURL);
+
+                    title.innerHTML = "Nama : " + profile.displayName;
+                    email.innerHTML = "Email : " + profile.email;
+
+                });
+            } else {
+                // No user is signed in.
+                logout();
+            }
+        });
+
+        function logout() {
+            firebase.auth().signOut().then(function () {
+                window.location.href = "./login.html"
+            }).catch(function (error) {
+                // An error happened.
+            });
+        }
+
+    </script>
 </body>
+
 </html>
